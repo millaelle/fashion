@@ -1,9 +1,32 @@
 <!doctype html>
-<html lang="da">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fashion Products</title>
+    <style>
+      #product-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 30px;
+      }
+      #product-list article {
+        border: 1px solid #ddd;
+        padding: 20px;
+      }
+      #product-list img {
+        width: 100%;
+        display: block;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <h1>Products</h1>
+
+    <main id="product-list"></main>
+
+    <script src="productlist.js"></script>
+  </body>
 </html>
